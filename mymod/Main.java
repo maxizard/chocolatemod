@@ -199,12 +199,12 @@ public class Main {
     MyFood_2.setCreativeTab(CreativeTabs.tabFood);
     
    //  REGISTER YOUR ENTITY
-        EntityRegistry.registerGlobalEntityID(MyEntityMinion.class, "Minion", EntityRegistry.findGlobalUniqueEntityId());
-        EntityRegistry.addSpawn(MyEntityMinion.class, 50, 1, 5, EnumCreatureType.creature, BiomeGenBase.desert);     
-        EntityRegistry.addSpawn(MyEntityMinion.class, 50, 1, 5, EnumCreatureType.monster, MyBiome_1);  
-        registerEntityEgg(MyEntityMinion.class, (new Color(255, 0, 0)).getRGB(), (new Color(0, 0, 0)).getRGB());
+        EntityRegistry.registerGlobalEntityID(MyEntityMinion.class, "Choclate Swag", EntityRegistry.findGlobalUniqueEntityId());
+        EntityRegistry.addSpawn(MyEntityMinion.class, 100, 1, 10, EnumCreatureType.creature, BiomeGenBase.desert);     
+        EntityRegistry.addSpawn(MyEntityMinion.class, 100, 1, 10, EnumCreatureType.monster, MyBiome_1);  
+        registerEntityEgg(MyEntityMinion.class, (new Color(116, 116, 116)).getRGB(), (new Color(90, 64, 26)).getRGB());
         RenderingRegistry.registerEntityRenderingHandler(MyEntityMinion.class, new MyRenderMinion(new MyModelMinion(), 0.3F));
-        ModLoader.addLocalization("entity.Minion.name", "Minion");
+        ModLoader.addLocalization("entity.Choclate Swag.name", "Choclate Swag");
 	
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
 
